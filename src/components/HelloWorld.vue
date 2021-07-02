@@ -1,4 +1,5 @@
 <template>
+  <div>
   <the-gallery buttonOnTop="false" selectionIndicator="true">
     <img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
     <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg"/>
@@ -6,10 +7,13 @@
     <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?cs=srgb&dl=pexels-pixabay-60597.jpg&fm=jpg"/>
     <img src="https://www.legacy.com/wp-content/uploads/2020/01/Sympathy-flowers-orange-1000-shutterstock_694680475-1200x900.jpg"/>
   </the-gallery>
+  <pugh-chart inputCategories="Price,Fun,Complexity" inputWeights = "1,2,3" inputOptions="Car,1,1,1/Bike,2,2,2"></pugh-chart>
+  </div>
 </template>
 
 <script>
 import "../WebComponentCollection/the-gallery";
+import 'pugh-chart'
 export default {
   name: "HelloWorld",
   props: {
